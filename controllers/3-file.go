@@ -17,10 +17,11 @@ func (f *FileController) Get() {
 }
 
 func (f *FileController) Post() {
+	// fmt.Println("获取请求信息", f.Ctx.Request.Header)
 	// 获取上传的文件
 	fo, h, err := f.GetFile("file") // 参数写前端input中的name属性的值，返回文件对象，文件头，err; 文件头中可以获取文件名
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("f.GetFile报错:", err)
 		return
 	}
 	defer fo.Close() // 使用完成后释放文件资源

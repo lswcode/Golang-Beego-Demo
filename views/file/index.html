@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
 
   <body>
+    <h1>1 使用原始表单上传</h1>
     <form action="http://localhost:8080/file" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" />
+      <input type="file" name="file" id="file" />
       <input type="submit" value="提交" />
     </form>
+    <hr />
+
+    <h1>2 使用axios配合FormData上传</h1>
+    <button onclick="send()">发送文件</button>
+    <script>
+      function send() {
+        var files = document.getElementById("file").files;
+        var newFormData = new FormData(); // FormData 是一个构造函数，用来生成实例，参数是表单元素，可以省略
+        newFormData.append("file", files[0]); // 使用append向form对象中添加数据
+        console.log(newFormData.get("file")); // 使用get读取某个值
+        axios({
+          url: "http://localhost:8080/file",
+          method: "post",
+          headers: { "Content-Type": "multipart/form-data" },
+          data: newFormData,
+        }).then((res) => {
+          let { data } = res;
+          console.log("返回的结果", data);
+        });
+      }
+    </script>
   </body>
 </html>
