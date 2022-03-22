@@ -11,7 +11,10 @@ type User struct {
 	Addr string
 }
 
-func init() {
+func (u *User) TableName() string { // 给结构体添加方法，来自定义表名
+	return "sys_user"
+}
 
+func init() {
 	orm.RegisterModel(new(User)) // 注册模型
 }

@@ -1,9 +1,8 @@
 package db
 
 import (
-	"fmt"
-
 	_ "beego_test/models" // 导入项目内部的包时，使用项目名开头
+	"fmt"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
