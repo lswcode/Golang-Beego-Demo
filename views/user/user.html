@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -15,5 +16,18 @@
       <input type="submit" value="提交" />
     </form>
     <hr />
+    <button onclick="send()">发送Post请求</button>
+
+    <script>
+      function send() {
+        axios({
+          url: "http://localhost:8080/test",
+          method: "post",
+        }).then((res) => {
+          let { data } = res;
+          console.log("返回的结果", data);
+        });
+      }
+    </script>
   </body>
 </html>

@@ -7,7 +7,7 @@ import (
 )
 
 type UserController struct {
-	beego.Controller
+	beego.Controller // 所有的请求响应处理，都继承自beego.Controller这个内置的结构体
 }
 
 // 同一个控制器中，不能有相同的请求方法，因为处理函数都是没有名字的，同一控制器下，通过请求方式来区分同一路由的不同处理函数
@@ -26,6 +26,7 @@ func (u *UserController) Get() { // 如果有两个Get方法，那beego就不知
 }
 
 type Student struct {
+	// go get github.com/astaxie/beego/validation  可以使用这个包进行表单格式验证
 	// 反射解析结构体标签tag
 	Username string `form:"username"` // 这里字段名必须大写，才能被beego包访问，下面才能使用beego包中的工具函数将数据直接保存数据到结构体中
 	Age      string `form:"age"`      // 字段名大写后，和form表单中传递的属性名就不同了，需要使用结构体的tag标签` `进行处理

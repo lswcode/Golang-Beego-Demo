@@ -31,7 +31,7 @@ func (f *FileController) Post() {
 	timeStr := strconv.FormatInt(timeUnix, 10) // 将int64类型转为字符串，因为数字不能直接和字符串拼接
 
 	// 保存获取到的文件
-	err2 := f.SaveToFile("file", "storage/"+timeStr+h.Filename) // 设置保存的路径和文件名，第一个参数是前端input中的name属性的值
+	err2 := f.SaveToFile("file", "storage/"+timeStr+"-"+h.Filename) // 设置保存的路径和文件名，第一个参数是前端input中的name属性的值
 	if err2 != nil {
 		fmt.Println("SaveToFile保存文件失败:", err2)
 	}

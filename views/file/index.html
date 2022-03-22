@@ -20,7 +20,7 @@
     <button onclick="send()">发送文件</button>
     <script>
       function send() {
-        var files = document.getElementById("file").files;
+        var files = document.getElementById("file").files; // 获取表单中的文件数组
         var newFormData = new FormData(); // FormData 是一个构造函数，用来生成实例，参数是表单元素，可以省略
         newFormData.append("file", files[0]); // 使用append向form对象中添加数据
         console.log(newFormData.get("file")); // 使用get读取某个值
