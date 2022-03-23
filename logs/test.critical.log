@@ -1,3 +1,6 @@
 2022/03/23 11:15:30.728 [C] [router.go:877]  这是Critical日志
 2022/03/23 11:15:51.448 [C] [router.go:877]  这是Critical日志
 2022/03/23 11:16:06.979 [C] [router.go:877]  这是Critical日志
+2022/03/23 17:37:02.594 [C] [asm_amd64.s:1581]  ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2022/03/23 18:18:07.491 [C] [router.go:877]  这是Critical日志
+2022/03/23 18:24:44.410 [C] [router.go:877]  这是Critical日志

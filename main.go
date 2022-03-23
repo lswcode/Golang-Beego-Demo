@@ -11,10 +11,14 @@ import (
 )
 
 func main() {
+	// beego.SetStaticPath("/static", "static")  // 设置静态资源路径，第一个参数是访问的路径，第二个参数是项目目录中的真实路径，系统默认设置了这一行代码
+	// beego.SetStaticPath("/", "views") // 设置views目录为静态资源目录，localhost:8080/css/chunk-11css请求，会去views中查找资源，此时就可以把css，js等文件夹放在views中了
 
+	// ----------------------------------------------------------------------------------------------------------------
 	// 过滤器:对特定的请求进行过滤限制，第一个参数: 过滤的目标路由规则，第二个参数: 过滤器触发的位置，第三个参数: 处理函数
 	// beego.InsertFilter("/cms/*",beego.BeforeRouter,controllers.xx) // 处理函数，一般都写在controllers包中
 	// 处理函数的参数必须是 (ctx *context.Context)
+	// -------------------------------------------------------------
 
 	orm.RunCommand() // 运行orm，数据库使用orm的前提
 	// logs.SetLogger(logs.AdapterConsole) // 启用logs日志系统，console等价于logs.AdapterConsole，表示输出到控制台
@@ -31,5 +35,5 @@ func main() {
 		`{"filename":"logs/test.log","separate":
 		 ["emergency", "alert", "critical", "error", "warning", "notice", "info", "debug"]}`)
 	// ---------------------------------------
-	beego.Run()
+	beego.Run() // 其它的配置都要在beego.Ru()之前就配置好，beego.Run()就表示服务已经开始运行，在此之后的配置就无法生效了
 }
