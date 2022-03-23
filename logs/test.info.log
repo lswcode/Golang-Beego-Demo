@@ -16,3 +16,5 @@
 2022/03/23 18:24:44.411 [I] [router.go:877]  这是Info日志
 2022/03/23 18:26:02.411 [I] [asm_amd64.s:1581]  http server Running on http://:8080
 2022/03/23 18:26:32.201 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/23 19:20:19.131 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/23 19:20:23.541 [I] [router.go:877]  这是Info日志
