@@ -117,3 +117,55 @@
 2022/03/23 19:20:23.542 [A] [router.go:877]  加密后的数据:---- 6e4880f1721d224f227127263db8cd59
 
 2022/03/23 19:20:23.543 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     3.7683ms|   match|[44m GET     [0m /log   r:/log
+2022/03/24 15:13:13.239 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/25 11:47:51.192 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/25 11:47:58.569 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.5176ms|   match|[44m GET     [0m /axios   r:/axios
+2022/03/25 11:47:59.884 [D] [server.go:2879]  |            ::1|[43m 404 [0m|        332µs| nomatch|[44m GET     [0m /favicon.ico
+2022/03/25 11:48:07.272 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      464.4µs|   match|[46m POST    [0m /axios   r:/axios
+2022/03/25 11:48:09.519 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /axios   r:/axios
+2022/03/25 11:48:27.666 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.4644ms|   match|[44m GET     [0m /test   r:/test
+2022/03/25 11:48:31.770 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      878.1µs|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:32.640 [D] [server.go:2879]  |            ::1|[42m 200 [0m|       59.5µs|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:35.137 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.0089ms|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:35.643 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:36.013 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      970.7µs|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:36.222 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      736.1µs|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:36.374 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /test   r:/test
+2022/03/25 11:48:36.532 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[46m POST    [0m /test   r:/test
+2022/03/25 16:14:07.141 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/25 16:14:15.012 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      892.5µs|   match|[44m GET     [0m /     r:/
+2022/03/25 16:14:15.059 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /node_modules/reveal.js/dist/reveal.css
+2022/03/25 16:14:15.084 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      185.1µs| nomatch|[44m GET     [0m /node_modules/reveal.js/dist/theme/black.css
+2022/03/25 16:14:15.085 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      526.5µs|   match|[44m GET     [0m /static/css/app.c7be3c37.css
+2022/03/25 16:14:15.086 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.0412ms|   match|[44m GET     [0m /static/css/chunk-vendors.c3544189.css
+2022/03/25 16:14:15.090 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      798.3µs|   match|[44m GET     [0m /static/js/app.75a095b5.js
+2022/03/25 16:14:15.090 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      798.3µs|   match|[44m GET     [0m /static/js/chunk-vendors.041f976c.js
+2022/03/25 16:14:17.291 [D] [server.go:2879]  |            ::1|[42m 200 [0m|       69.7µs|   match|[44m GET     [0m /static/css/chunk-15bdbcf2.173787fa.css
+2022/03/25 16:14:17.291 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/css/chunk-2b6758d0.d9d95fb7.css
+2022/03/25 16:14:17.297 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/css/chunk-2e3065a8.0c636278.css
+2022/03/25 16:14:17.297 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      163.5µs|   match|[44m GET     [0m /static/css/chunk-2d26b99d.6f428753.css
+2022/03/25 16:14:17.298 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/css/chunk-322c6977.b8ae9d6b.css
+2022/03/25 16:14:17.299 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      521.4µs|   match|[44m GET     [0m /static/css/chunk-55296d5c.6c310de7.css
+2022/03/25 16:14:17.299 [D] [server.go:2879]  |            ::1|[42m 200 [0m|        6.9µs|   match|[44m GET     [0m /static/css/chunk-66ce38b9.c1c65042.css
+2022/03/25 16:14:17.300 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/css/chunk-6f153024.e8fa7096.css
+2022/03/25 16:14:17.301 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      517.3µs|   match|[44m GET     [0m /static/js/chunk-15bdbcf2.0a06d131.js
+2022/03/25 16:14:17.303 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      243.1µs|   match|[44m GET     [0m /static/js/chunk-2b6758d0.5ebad1ac.js
+2022/03/25 16:14:17.304 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      114.6µs|   match|[44m GET     [0m /static/js/chunk-2d26b99d.82fc85a5.js
+2022/03/25 16:14:17.304 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/js/chunk-2e3065a8.07d0d86b.js
+2022/03/25 16:14:17.305 [D] [server.go:2879]  |            ::1|[42m 200 [0m|        569µs|   match|[44m GET     [0m /static/js/chunk-322c6977.8f34eb4d.js
+2022/03/25 16:14:17.307 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.5706ms|   match|[44m GET     [0m /static/js/chunk-55296d5c.bf957ebb.js
+2022/03/25 16:14:17.307 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      538.3µs|   match|[44m GET     [0m /static/js/chunk-66ce38b9.9e613641.js
+2022/03/25 16:14:17.307 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      538.3µs|   match|[44m GET     [0m /static/js/chunk-6f153024.a907b482.js
+2022/03/25 16:14:17.371 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/fonts/iconfont.76bd0319.woff2
+2022/03/25 16:14:21.834 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     2.0392ms|   match|[44m GET     [0m /test   r:/test
+2022/03/25 16:14:27.034 [D] [server.go:2879]  |            ::1|[47m 302 [0m|      497.5µs| nomatch|[44m GET     [0m /cs
+2022/03/25 16:14:27.041 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     2.0571ms|   match|[44m GET     [0m /test   r:/test
+2022/03/25 16:14:32.321 [D] [server.go:2879]  |            ::1|[47m 302 [0m|           0s| nomatch|[44m GET     [0m /cs/cscs
+2022/03/25 16:14:32.330 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.0014ms|   match|[44m GET     [0m /test   r:/test
+2022/03/25 16:14:58.744 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/25 16:14:58.804 [D] [server.go:2879]  |            ::1|[47m 302 [0m|           0s| nomatch|[44m GET     [0m /cs/cs
+2022/03/25 16:14:58.809 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      999.6µs|   match|[44m GET     [0m /test   r:/test
+2022/03/25 16:15:03.821 [D] [server.go:2879]  |            ::1|[47m 302 [0m|           0s| nomatch|[44m GET     [0m /cs/cs
+2022/03/25 16:15:03.826 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      1.278ms|   match|[44m GET     [0m /test   r:/test
+2022/03/25 16:18:02.223 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/03/25 16:21:34.694 [I] [asm_amd64.s:1581]  http server Running on http://:8080

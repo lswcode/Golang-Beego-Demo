@@ -35,7 +35,6 @@ func (f *FileController) Post() {
 	if err2 != nil {
 		fmt.Println("SaveToFile保存文件失败:", err2)
 	}
-
-	f.Data["json"] = map[string]interface{}{"code": 200, "msg": "上传成功"}
+	f.Data["json"] = map[string]interface{}{"code": 200, "msg": "上传成功"} // Data是一个map类型数据，用来存储要输出给前端的数据，[ ]内的键表示值的类型
 	f.ServeJSON()
 }

@@ -1,9 +1,10 @@
 package main
 
 import (
-	_ "beego_test/routers"
+	"beego_test/controllers"
+	_ "beego_test/routers" // 导入项目内部的包时，使用项目名开头
 
-	_ "beego_test/db" // 导入项目内部的包时，使用项目名开头
+	_ "beego_test/db" // 启动数据库
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
@@ -16,7 +17,7 @@ func main() {
 
 	// ----------------------------------------------------------------------------------------------------------------
 	// 过滤器:对特定的请求进行过滤限制，第一个参数: 过滤的目标路由规则，第二个参数: 过滤器触发的位置，第三个参数: 处理函数
-	// beego.InsertFilter("/cms/*",beego.BeforeRouter,controllers.xx) // 处理函数，一般都写在controllers包中
+	beego.InsertFilter("/cs/*", beego.BeforeRouter, controllers.FilterFun) // 过滤器写在main中的beego.Run之前
 	// 处理函数的参数必须是 (ctx *context.Context)
 	// -------------------------------------------------------------
 
