@@ -573,3 +573,51 @@
 2022/03/28 17:26:16.231 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/css/chunk-2e3065a8.0c636278.css
 2022/03/28 17:26:16.231 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/js/chunk-2e3065a8.07d0d86b.js
 2022/03/28 17:26:16.267 [D] [server.go:2879]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/fonts/iconfont.76bd0319.woff2
+2022/06/01 14:27:06.427 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/06/01 14:28:58.609 [D] [server.go:2879]  |            ::1|[42m 200 [0m|     1.0346ms|   match|[44m GET     [0m /     r:/
+2022/06/01 14:28:58.643 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      231.7µs| nomatch|[44m GET     [0m /static/css/app.c7be3c37.css
+2022/06/01 14:28:58.652 [D] [server.go:2879]  |            ::1|[43m 404 [0m|     1.2814ms| nomatch|[44m GET     [0m /static/css/chunk-vendors.c3544189.css
+2022/06/01 14:28:58.652 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      617.5µs| nomatch|[44m GET     [0m /static/js/app.75a095b5.js
+2022/06/01 14:28:58.653 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      517.8µs| nomatch|[44m GET     [0m /static/js/chunk-vendors.041f976c.js
+2022/06/01 14:29:01.138 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-2b6758d0.d9d95fb7.css
+2022/06/01 14:29:01.138 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      329.7µs| nomatch|[44m GET     [0m /static/css/chunk-15bdbcf2.173787fa.css
+2022/06/01 14:29:01.138 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-2d26b99d.6f428753.css
+2022/06/01 14:29:01.140 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-2e3065a8.0c636278.css
+2022/06/01 14:29:01.140 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-322c6977.b8ae9d6b.css
+2022/06/01 14:29:01.141 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-55296d5c.6c310de7.css
+2022/06/01 14:29:01.141 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/css/chunk-66ce38b9.c1c65042.css
+2022/06/01 14:29:01.142 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      507.3µs| nomatch|[44m GET     [0m /static/css/chunk-6f153024.e8fa7096.css
+2022/06/01 14:29:01.142 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/js/chunk-15bdbcf2.0a06d131.js
+2022/06/01 14:29:01.144 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      745.9µs| nomatch|[44m GET     [0m /static/js/chunk-2b6758d0.5ebad1ac.js
+2022/06/01 14:29:01.144 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/js/chunk-2d26b99d.82fc85a5.js
+2022/06/01 14:29:01.144 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      515.2µs| nomatch|[44m GET     [0m /static/js/chunk-2e3065a8.07d0d86b.js
+2022/06/01 14:29:01.144 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/js/chunk-322c6977.8f34eb4d.js
+2022/06/01 14:29:01.145 [D] [server.go:2879]  |            ::1|[43m 404 [0m|       33.6µs| nomatch|[44m GET     [0m /static/js/chunk-55296d5c.bf957ebb.js
+2022/06/01 14:29:01.145 [D] [server.go:2879]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/js/chunk-66ce38b9.9e613641.js
+2022/06/01 14:29:01.147 [D] [server.go:2879]  |            ::1|[43m 404 [0m|      230.5µs| nomatch|[44m GET     [0m /static/js/chunk-6f153024.a907b482.js
+2022/06/01 14:29:13.837 [D] [server.go:2879]  |            ::1|[42m 200 [0m|      794.1µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:29:51.555 [D] [server.go:2879]  |            ::1|[47m 304 [0m|      622.9µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:30:20.953 [D] [server.go:2879]  |            ::1|[47m 304 [0m|     1.0275ms|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:30:37.374 [D] [server.go:2879]  |            ::1|[47m 304 [0m|      648.1µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:41:24.958 [D] [server.go:2879]  |            ::1|[47m 304 [0m|           0s|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:42:06.105 [D] [server.go:2879]  |  192.168.3.137|[42m 200 [0m|       95.6µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:42:07.650 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|      838.2µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 14:45:18.656 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|      509.1µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:07:15.154 [D] [server.go:2879]  |  192.168.3.137|[42m 200 [0m|      513.4µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:07:56.738 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|      744.8µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:07:57.543 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|      649.3µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:08:01.636 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|     1.0007ms|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:08:09.702 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|      481.4µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:16:09.837 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/06/01 15:16:47.739 [D] [server.go:2879]  |  192.168.3.137|[47m 304 [0m|           0s|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:16:55.061 [D] [server.go:2879]  |  192.168.3.137|[42m 200 [0m|      578.6µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:21:11.138 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/06/01 15:22:55.818 [D] [server.go:2879]  |  192.168.3.131|[42m 200 [0m|      972.9µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:22:56.318 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|       99.2µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:23:01.604 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|           0s|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:23:05.544 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|      596.7µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:23:05.820 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|      172.3µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:23:54.264 [I] [asm_amd64.s:1581]  http server Running on http://:8080
+2022/06/01 15:24:02.773 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|        519µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:24:06.149 [D] [server.go:2879]  |  192.168.3.131|[47m 304 [0m|      866.9µs|   match|[44m GET     [0m /download   r:/download
+2022/06/01 15:24:22.118 [I] [asm_amd64.s:1581]  http server Running on http://:8080

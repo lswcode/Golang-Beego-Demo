@@ -9,6 +9,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
+	"github.com/astaxie/beego/plugins/cors"
 )
 
 func main() {
@@ -35,6 +36,22 @@ func main() {
 	logs.SetLogger(logs.AdapterMultiFile, // 日志分类别，多文件写入，各个级别不同的日志生成单独的文件
 		`{"filename":"logs/test.log","separate":
 		 ["emergency", "alert", "critical", "error", "warning", "notice", "info", "debug"]}`)
+
+	// 开启cors跨域
+	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{ // 第一个参数设置*，即匹配所有请求
+		//允许访问所有源
+		AllowAllOrigins: true,
+		//可选参数"GET", "POST", "PUT", "DELETE", "OPTIONS" (*为所有)
+		//其中Options跨域复杂请求预检
+		AllowMethods: []string{"*"},
+		//指的是允许的Header的种类
+		AllowHeaders: []string{"*"},
+		//公开的HTTP标头列表
+		ExposeHeaders: []string{"Content-Length"},
+		//如果设置，则允许共享身份验证凭据，例如cookie
+		AllowCredentials: true,
+	}))
+
 	// ---------------------------------------
 	beego.Run() // 其它的配置都要在beego.Ru()之前就配置好，beego.Run()就表示服务已经开始运行，在此之后的配置就无法生效了
 }

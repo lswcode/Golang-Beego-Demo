@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="http://192.168.3.137:8080/download" download="">下载1</a>
+    <h1 onclick="download()">下载2</h1>
+    <script>
+      function download() {
+        // window.location.href = "http://192.168.3.137:8080/download";
+        window.open("http://192.168.3.137:8080/download");
+      }
+
+      // 返回给前端的数据会自适应前端的处理
+      // 可以把接口地址放在a标签的href中，有没有download属性都可以
+      // 也可以使用window.location.href或 window.open直接调用接口
+
+      // 注意: 不能使用AJAX/axios调用这个接口来下载文件，因为axios返回的结果是一个HTTP响应体，是JSON格式的字符串，里面有各种属性参数，并不是一个可以下载的文件
+    </script>
+  </body>
+</html>
